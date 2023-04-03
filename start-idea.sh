@@ -1,7 +1,6 @@
 #!/bin/bash
 
-base_dir=`pwd`
+export IDEA_PROPERTIES=$PWD/idea.properties
+export IDEA_JDK=$PWD/jdk
 
-export IDEA_PROPERTIES=$base_dir/idea.properties
-export IDEA_JDK=$base_dir/jdk
-nohup sh $base_dir/sw_files/bin/idea.sh
+nohup sh $PWD/sw_files/bin/idea.sh
